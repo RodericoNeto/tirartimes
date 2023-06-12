@@ -1,8 +1,11 @@
 .App {
   text-align: center;
-  padding-top: 32px;
 }
 
+.r-title{
+  padding: 24px 0;
+  color: #fff;
+}
 
 .infos-container{
   margin: auto;

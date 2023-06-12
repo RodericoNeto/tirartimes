@@ -54,11 +54,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='r-title'>Sorteio de times</h1>
+      <h1 className='r-title bg-primary'>Sorteio de times</h1>
       <div className='infos-container'>
         <div className="form-group">
           <label htmlFor="playersName" className="form-label mt-4">Jogadores</label>
-          <input type="text" className="form-control" id="playersName" placeholder="nome1 nome2 nome3..." onInput={(e) => { setStringNames(e.target.value) }} />
+          <textarea rows={4} type="text" className="form-control" id="playersName" placeholder="nome1 nome2 nome3..." onInput={(e) => { setStringNames(e.target.value) }} />
         </div>
         <div className="form-group">
           <label htmlFor="numPlayers" className="form-label mt-4">Nº de jogadores por time</label>
@@ -71,7 +71,7 @@ function App() {
         <button onClick={displayStringNames}>Gerar</button>
       </div> */}
       <div className='button-show-container'>
-        <button type='button' onClick={displayNames} className='btn btn-primary'>Mostrar times</button>
+        <button type='button' onClick={displayNames} className='btn btn-primary'>Tirar times</button>
       </div>
 
       <div className='teams-container'>{listaTimes.map((i)=>{
